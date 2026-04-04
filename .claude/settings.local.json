@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(python3 .claude/generate_infographic.py *)"
+    ]
+  }
+}

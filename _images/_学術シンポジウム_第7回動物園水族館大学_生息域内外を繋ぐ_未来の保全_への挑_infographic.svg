@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" font-family="'Inter','Noto Sans JP',system-ui,sans-serif">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+  </filter>
+  <linearGradient id="gradHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+  </linearGradient>
+</defs>
+<rect width="800" height="480" fill="#f8fafc"/>
+<circle cx="720.0" cy="48.0" r="150" fill="#10b981" opacity="0.04"/>
+<circle cx="80.0" cy="432.0" r="100" fill="#10b981" opacity="0.03"/>
+<rect x="0" y="0" width="800" height="64" fill="url(#gradHeader)"/>
+<text x="24" y="32" font-size="24" dominant-baseline="middle">🏛️</text>
+<text x="60" y="32" font-size="14" fill="#ffffff" font-weight="600" dominant-baseline="middle" letter-spacing="0.05em">動物園学</text>
+<text x="776" y="28" font-size="12" fill="#ffffff" opacity="0.6" text-anchor="end">2026-02-22</text>
+<text x="776" y="44" font-size="10" fill="#10b981" text-anchor="end" font-weight="bold">ZOO KNOWLEDGE VAULT</text>
+<rect x="24" y="88" width="752" height="110" fill="#ffffff" rx="12" filter="url(#shadow)"/>
+<text x="44" y="125" font-size="24" fill="#0f172a" font-weight="800" letter-spacing="-0.02em">【学術シンポジウム】第7回動物園</text>
+<text x="44" y="157" font-size="24" fill="#0f172a" font-weight="800" letter-spacing="-0.02em">水族館大学：生息域内外を繋ぐ『未来の保全』への挑戦</text>
+<rect x="44" y="170" width="8" height="18" fill="#10b981" rx="2"/>
+<text x="60" y="184" font-size="13" fill="#64748b" font-weight="500">- **シンポジウム名**: 2025年度 第7回動物園水族館大学シンポジウム「動物園・水族館が拓く未来の保全―生息域内外をつなぐ新たな挑戦</text>
+<rect x="16" y="220" width="180" height="160" fill="#ffffff" rx="16" filter="url(#shadow)"/>
+<path d="M32 221 H180" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+<circle cx="48" cy="256" r="18" fill="#ecfdf5"/>
+<text x="48" y="257" font-size="14" fill="#10b981" font-weight="bold" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="74" y="256" font-size="14" fill="#0f172a" font-weight="bold" dominant-baseline="middle">インフォグラフィ</text>
+<text x="36" y="295" font-size="12" fill="#64748b" line-height="1.5"></text>
+<rect x="212" y="220" width="180" height="160" fill="#ffffff" rx="16" filter="url(#shadow)"/>
+<path d="M228 221 H376" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+<circle cx="244" cy="256" r="18" fill="#ecfdf5"/>
+<text x="244" y="257" font-size="14" fill="#10b981" font-weight="bold" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="270" y="256" font-size="14" fill="#0f172a" font-weight="bold" dominant-baseline="middle">基本情報</text>
+<text x="232" y="295" font-size="12" fill="#64748b" line-height="1.5">- **シンポジウム名**</text>
+<text x="232" y="315" font-size="12" fill="#64748b" line-height="1.5">: 2025年度 第7回動物園</text>
+<rect x="408" y="220" width="180" height="160" fill="#ffffff" rx="16" filter="url(#shadow)"/>
+<path d="M424 221 H572" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+<circle cx="440" cy="256" r="18" fill="#ecfdf5"/>
+<text x="440" y="257" font-size="14" fill="#10b981" font-weight="bold" text-anchor="middle" dominant-baseline="middle">3</text>
+<text x="466" y="256" font-size="14" fill="#0f172a" font-weight="bold" dominant-baseline="middle">概要</text>
+<text x="428" y="295" font-size="12" fill="#64748b" line-height="1.5">2026年2月22日から23</text>
+<text x="428" y="315" font-size="12" fill="#64748b" line-height="1.5">日にかけ、滋賀県立琵琶湖博物</text>
+<rect x="604" y="220" width="180" height="160" fill="#ffffff" rx="16" filter="url(#shadow)"/>
+<path d="M620 221 H768" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+<circle cx="636" cy="256" r="18" fill="#ecfdf5"/>
+<text x="636" y="257" font-size="14" fill="#10b981" font-weight="bold" text-anchor="middle" dominant-baseline="middle">4</text>
+<text x="662" y="256" font-size="14" fill="#0f172a" font-weight="bold" dominant-baseline="middle">詳細</text>
+<text x="624" y="295" font-size="12" fill="#64748b" line-height="1.5">- **主要な発表セッシ</text>
+<text x="624" y="315" font-size="12" fill="#64748b" line-height="1.5">ョン**:</text>
+<rect x="24" y="416" width="752" height="48" fill="#ecfdf5" rx="24"/>
+<text x="48" y="442" font-size="11" fill="#10b981" font-weight="800" dominant-baseline="middle">FEATURED DATA</text>
+<text x="752" y="442" font-size="18" fill="#0f172a" font-weight="800" text-anchor="end" dominant-baseline="middle">DATABANK</text>
+</svg>
