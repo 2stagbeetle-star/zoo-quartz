@@ -1266,7 +1266,7 @@ def insert_into_article(filepath, svg_filename, references_text, infographic_typ
 
     ref_section = (
         f"\n## 参考・引用元\n\n"
-        f"{references_text if references_text else '- 情報収集中'}\n"
+        f"{references_text}\n"
     )
 
     fm_end     = content.find("---", 3)
@@ -1281,12 +1281,15 @@ def insert_into_article(filepath, svg_filename, references_text, infographic_typ
     else:
         new_content = content[:insert_pos] + infographic_section + content[insert_pos:]
 
-    if "## 参考" in new_content or "## 情報源" in new_content:
-        new_content = re.sub(
-            r'\n## (参考|情報源)[\s\S]*$', ref_section, new_content
-        )
-    else:
-        new_content = new_content.rstrip() + "\n" + ref_section
+    # 参考URLが取得できた場合のみ、参考セクションを置換する。
+    # 取得できなかった場合は既存の参考セクションを保持して内容劣化を防ぐ。
+    if references_text:
+        if "## 参考" in new_content or "## 情報源" in new_content:
+            new_content = re.sub(
+                r'\n## (参考|情報源)[\s\S]*$', ref_section, new_content
+            )
+        else:
+            new_content = new_content.rstrip() + "\n" + ref_section
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(new_content)

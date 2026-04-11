@@ -2,7 +2,17 @@
   "permissions": {
     "allow": [
       "Bash(git --version)",
-      "Bash(python3 .claude/generate_infographic.py *)"
+      "Bash(python3 .claude/generate_infographic.py *)",
+      "Bash(bash .claude/deploy.sh)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git remote -v)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
+      "Bash(gh run watch:*)",
+      "WebFetch(domain:2stagbeetle-star.github.io)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

@@ -3,6 +3,7 @@ title: "AOAO SAPPOROフェアリーペンギン誕生と国際繁殖プログラ
 date: 2026-03-24
 updated: 2026-03-24
 tags:
+  - 動物園学・博物館学
   - 水族館
   - 鳥類
   - 繁殖
@@ -11,8 +12,6 @@ tags:
 author: "Zoo Knowledge Vault"
 draft: false
 ---
-
-
 
 ## インフォグラフィック
 

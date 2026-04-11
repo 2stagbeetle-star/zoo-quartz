@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" font-family="'Noto Serif JP','Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif">
+<defs>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
+  </filter>
+  <linearGradient id="gradHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#2d5a27;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#4a7a3a;stop-opacity:1" />
+  </linearGradient>
+</defs>
+<rect width="800" height="500" fill="#f5f2ec"/>
+<line x1="0" y1="76" x2="800" y2="76" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="100" x2="800" y2="100" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="124" x2="800" y2="124" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="148" x2="800" y2="148" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="172" x2="800" y2="172" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="196" x2="800" y2="196" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="220" x2="800" y2="220" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="244" x2="800" y2="244" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="268" x2="800" y2="268" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="292" x2="800" y2="292" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="316" x2="800" y2="316" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="340" x2="800" y2="340" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="364" x2="800" y2="364" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="388" x2="800" y2="388" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="412" x2="800" y2="412" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="436" x2="800" y2="436" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="460" x2="800" y2="460" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<line x1="0" y1="484" x2="800" y2="484" stroke="#c8b89a" stroke-width="0.5" opacity="0.18"/>
+<path d="M780 72 C740 72 710 100 720 130 C730 160 780 150 780 130 Z" fill="#2d5a27" opacity="0.06"/>
+<path d="M780 130 L745 100" stroke="#2d5a27" stroke-width="0.8" opacity="0.06"/>
+<rect x="0" y="0" width="800" height="64" fill="url(#gradHeader)"/>
+<text x="22" y="32" font-size="22" dominant-baseline="middle">🌿</text>
+<text x="54" y="32" font-size="13" fill="#fefcf8" font-weight="600" dominant-baseline="middle" letter-spacing="0.06em">自然環境</text>
+<text x="778" y="26" font-size="11" fill="rgba(255,255,255,0.65)" text-anchor="end">2026-08-11</text>
+<text x="778" y="44" font-size="9" fill="#c8a84b" text-anchor="end" font-weight="700" letter-spacing="0.05em">ZOO KNOWLEDGE VAULT</text>
+<rect x="20" y="82" width="760" height="90" fill="#fefcf8" rx="10" filter="url(#shadow)" stroke="#d8d0c4" stroke-width="0.5"/>
+<rect x="20" y="82" width="760" height="3" fill="#c8a84b" rx="10"/>
+<text x="40" y="112" font-size="20" fill="#2c2820" font-weight="700" letter-spacing="0.01em">【2026年08月】生態学・自然環境学</text>
+<text x="40" y="138" font-size="20" fill="#2c2820" font-weight="700" letter-spacing="0.01em">徹底分析：生態系機能と個体群動態解析と災害レジリエンス</text>
+<rect x="40" y="144" width="3" height="16" fill="#2d5a27" rx="2"/>
+<text x="52" y="156" font-size="11" fill="#6b5e52" font-weight="500">【2026年08月】生態学・自然環境学徹底分析：生態系機能と個体群動態解析と災害レジリエンス</text>
+<line x1="56" y1="208" x2="56" y2="380" stroke="#2d5a27" stroke-width="2" opacity="0.25"/>
+<circle cx="56" cy="208" r="16" fill="#2d5a27"/>
+<text x="56" y="208" font-size="13" fill="#fefcf8" font-weight="700" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="82" y="202" font-size="13" fill="#2c2820" font-weight="700">記録フォーマットを統</text>
+<text x="82" y="220" font-size="11" fill="#6b5e52">記録フォーマットを統一し、入力欠損を当日中に補完す</text>
+<text x="82" y="234" font-size="11" fill="#6b5e52">る。</text>
+<line x1="78" y1="225" x2="780" y2="225" stroke="#c8b89a" stroke-width="0.5" opacity="0.5"/>
+<circle cx="56" cy="251" r="16" fill="#2d5a27"/>
+<text x="56" y="251" font-size="13" fill="#fefcf8" font-weight="700" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="82" y="245" font-size="13" fill="#2c2820" font-weight="700">異常兆候は時刻・数値</text>
+<text x="82" y="263" font-size="11" fill="#6b5e52">異常兆候は時刻・数値・文脈の3点セットで保存する。</text>
+<line x1="78" y1="268" x2="780" y2="268" stroke="#c8b89a" stroke-width="0.5" opacity="0.5"/>
+<circle cx="56" cy="294" r="16" fill="#2d5a27"/>
+<text x="56" y="294" font-size="13" fill="#fefcf8" font-weight="700" text-anchor="middle" dominant-baseline="middle">3</text>
+<text x="82" y="288" font-size="13" fill="#2c2820" font-weight="700">警戒段階の段階定義を</text>
+<text x="82" y="306" font-size="11" fill="#6b5e52">警戒段階の段階定義をチーム内で毎月再確認する。</text>
+<line x1="78" y1="311" x2="780" y2="311" stroke="#c8b89a" stroke-width="0.5" opacity="0.5"/>
+<circle cx="56" cy="337" r="16" fill="#2d5a27"/>
+<text x="56" y="337" font-size="13" fill="#fefcf8" font-weight="700" text-anchor="middle" dominant-baseline="middle">4</text>
+<text x="82" y="331" font-size="13" fill="#2c2820" font-weight="700">週次レビューでは成功</text>
+<text x="82" y="349" font-size="11" fill="#6b5e52">週次レビューでは成功例より再現不能事例を優先分析す</text>
+<text x="82" y="363" font-size="11" fill="#6b5e52">る。</text>
+<line x1="78" y1="354" x2="780" y2="354" stroke="#c8b89a" stroke-width="0.5" opacity="0.5"/>
+<circle cx="56" cy="380" r="16" fill="#2d5a27"/>
+<text x="56" y="380" font-size="13" fill="#fefcf8" font-weight="700" text-anchor="middle" dominant-baseline="middle">5</text>
+<text x="82" y="374" font-size="13" fill="#2c2820" font-weight="700">月次で是正完了率を可</text>
+<text x="82" y="392" font-size="11" fill="#6b5e52">月次で是正完了率を可視化し、次月計画へ反映する。</text>
+<rect x="20" y="444" width="760" height="40" fill="#eef3eb" rx="8" stroke="#d8d0c4" stroke-width="0.5"/>
+<text x="40" y="466" font-size="10" fill="#2d5a27" font-weight="700" dominant-baseline="middle" letter-spacing="0.04em">注目データ</text>
+<text x="760" y="466" font-size="16" fill="#2c2820" font-weight="700" text-anchor="end" dominant-baseline="middle">—</text>
+</svg>
