@@ -12,7 +12,9 @@
       "Write(17_求人情報/**)",
       "Edit(17_求人情報/**)",
       "Write(18_学術論文・研究/**)",
-      "Edit(18_学術論文・研究/**)"
+      "Edit(18_学術論文・研究/**)",
+      "Bash(gh auth:*)",
+      "Bash(gh api:*)"
     ],
     "additionalDirectories": [
       "C:\\Users\\stagb\\Documents\\zoo-quartz\\quartz\\styles"
