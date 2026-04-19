@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zoo Auto Prompt Runner"
+  short_description: "Run every legacy prompt in Claude and Codex"
+  default_prompt: "Run all prompts in this repository for Claude and Codex."
