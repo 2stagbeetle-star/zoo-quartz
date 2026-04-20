@@ -1,62 +1,77 @@
 @echo off
-chcp 65001 > nul
+setlocal EnableExtensions
+
 cd /d "%~dp0"
 
-set LOGFILE=%~dp0_drafts\実行ログ.txt
+set "LOGFILE=%~dp0_drafts\daily_run_log.txt"
 
 echo ======================================================= >> "%LOGFILE%"
-echo Zoo Knowledge Vault - 日次自動実行（リサーチ・求人・論文） >> "%LOGFILE%"
-echo 実行開始: %date% %time% >> "%LOGFILE%"
+echo Zoo Knowledge Vault - Daily automation >> "%LOGFILE%"
+echo Start: %date% %time% >> "%LOGFILE%"
 echo ======================================================= >> "%LOGFILE%"
 
-REM claude コマンドのパスを解決（タスクスケジューラ経由では PATH が通らない場合がある）
+REM Resolve claude command path
 where claude >nul 2>&1
-if %ERRORLEVEL% neq 0 (
-    REM Windows Store パッケージ内の最新バージョンを動的に検出
-    set CLAUDE_CMD=
+if errorlevel 1 (
+    set "CLAUDE_CMD="
+
+    REM Windows Store package path (latest version folder)
     for /f "delims=" %%f in ('dir /b /ad /o-n "%USERPROFILE%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\" 2^>nul') do (
-        if not defined CLAUDE_CMD set CLAUDE_CMD=%USERPROFILE%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\%%f\claude.exe
+        if not defined CLAUDE_CMD set "CLAUDE_CMD=%USERPROFILE%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\%%f\claude.exe"
     )
-    REM npm グローバルインストールのフォールバック
+
+    REM npm global install fallback
     if not defined CLAUDE_CMD (
         if exist "%USERPROFILE%\AppData\Roaming\npm\claude.cmd" (
-            set CLAUDE_CMD=%USERPROFILE%\AppData\Roaming\npm\claude.cmd
+            set "CLAUDE_CMD=%USERPROFILE%\AppData\Roaming\npm\claude.cmd"
         )
     )
+
     if not defined CLAUDE_CMD (
-        echo [ERROR] claude コマンドが見つかりません >> "%LOGFILE%"
+        echo [ERROR] claude command not found. >> "%LOGFILE%"
         exit /b 1
     )
 ) else (
-    set CLAUDE_CMD=claude
+    set "CLAUDE_CMD=claude"
 )
 
-echo [INFO] claude コマンド: %CLAUDE_CMD% >> "%LOGFILE%"
-echo [INFO] 作業ディレクトリ: %cd% >> "%LOGFILE%"
+echo [INFO] claude command: %CLAUDE_CMD% >> "%LOGFILE%"
+echo [INFO] working directory: %cd% >> "%LOGFILE%"
 echo. >> "%LOGFILE%"
 
-echo --- [1/4] 日次トピックリサーチ --- >> "%LOGFILE%"
+echo --- [1/5] Daily topic research --- >> "%LOGFILE%"
 %CLAUDE_CMD% -p "/daily-topic-researcher" >> "%LOGFILE%" 2>&1
 
 echo. >> "%LOGFILE%"
-echo --- [2/4] 求人情報収集 --- >> "%LOGFILE%"
+echo --- [2/5] Job listing collection --- >> "%LOGFILE%"
 %CLAUDE_CMD% -p "/job-listing-collector" >> "%LOGFILE%" 2>&1
 
 echo. >> "%LOGFILE%"
-echo --- [3/4] 学術論文収集 --- >> "%LOGFILE%"
+echo --- [3/5] Paper collection --- >> "%LOGFILE%"
 %CLAUDE_CMD% -p "/paper-collector" >> "%LOGFILE%" 2>&1
 
-REM 曜日判定: 月曜日なら週次記事生成も実行
-for /f %%d in ('powershell -NoProfile -Command "(Get-Date).DayOfWeek"') do set DOW=%%d
 echo. >> "%LOGFILE%"
-if "%DOW%"=="Monday" (
-    echo --- [4/4] 週次記事生成（月曜日のみ自動実行） --- >> "%LOGFILE%"
+echo --- [4/5] Event board auto-update --- >> "%LOGFILE%"
+where python >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] python command not found. Skipping event board update. >> "%LOGFILE%"
+) else (
+    python automation\update-event-board.py >> "%LOGFILE%" 2>&1
+)
+
+REM Weekly article generation (Monday only)
+for /f %%d in ('powershell -NoProfile -Command "(Get-Date).DayOfWeek"') do set "DOW=%%d"
+echo. >> "%LOGFILE%"
+if /I "%DOW%"=="Monday" (
+    echo --- [5/5] Weekly article generation (Monday) --- >> "%LOGFILE%"
     %CLAUDE_CMD% -p "/weekly-article-generator" >> "%LOGFILE%" 2>&1
 ) else (
-    echo [INFO] 本日は%DOW%のため週次記事生成をスキップ >> "%LOGFILE%"
+    echo [INFO] Weekly article skipped (today: %DOW%). >> "%LOGFILE%"
 )
 
 echo. >> "%LOGFILE%"
-echo 終了: %date% %time% >> "%LOGFILE%"
+echo End: %date% %time% >> "%LOGFILE%"
 echo ======================================================= >> "%LOGFILE%"
 echo. >> "%LOGFILE%"
+
+exit /b 0
