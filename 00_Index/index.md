@@ -117,7 +117,7 @@ draft: false
   </a>
   <a href="17_求人情報" class="zoo-category-card" data-cat="jobs">
     <div class="zoo-cat-photo"><span class="zoo-cat-emoji">💼</span></div>
-    <div class="zoo-cat-body"><h3>求人・キャリア情報</h3><p>動物園・水族館・NPO・研究機関の採用</p></div>
+    <div class="zoo-cat-body"><h3>求人・イベント情報</h3><p>動物園・水族館・NPO・自治体の採用・イベント告知</p></div>
   </a>
   <a href="18_学術論文・研究" class="zoo-category-card" data-cat="research">
     <div class="zoo-cat-photo"><span class="zoo-cat-emoji">📘</span></div>
@@ -193,6 +193,13 @@ draft: false
     <h3>動物園・水族館関連まとめ</h3>
     <p>JAZA加盟園館の取り組み・最新ニュース・施設情報を一覧で確認</p>
     <span class="zoo-featured-link">まとめを見る →</span>
+  </a>
+  <a href="17_求人情報/生き物イベント掲示板" class="zoo-featured-card" data-cat="jobs">
+    <div class="zoo-featured-label">新設掲示板</div>
+    <div class="zoo-featured-emoji">📌</div>
+    <h3>生き物イベント掲示板</h3>
+    <p>博物館・動物園・市役所・民間・NPO・公園のイベント情報を一括管理</p>
+    <span class="zoo-featured-link">掲示板を見る →</span>
   </a>
 </div>
 
