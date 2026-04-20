@@ -50,23 +50,18 @@ echo. >> "%LOGFILE%"
 echo --- [3/5] Paper collection --- >> "%LOGFILE%"
 %CLAUDE_CMD% -p "/paper-collector" >> "%LOGFILE%" 2>&1
 
-echo. >> "%LOGFILE%"
-echo --- [4/5] Event board auto-update --- >> "%LOGFILE%"
-where python >nul 2>&1
-if errorlevel 1 (
-    echo [ERROR] python command not found. Skipping event board update. >> "%LOGFILE%"
-) else (
-    python automation\update-event-board.py >> "%LOGFILE%" 2>&1
-)
-
-REM Weekly article generation (Monday only)
+REM Weekly tasks (Monday only)
 for /f %%d in ('powershell -NoProfile -Command "(Get-Date).DayOfWeek"') do set "DOW=%%d"
 echo. >> "%LOGFILE%"
 if /I "%DOW%"=="Monday" (
+    echo --- [4/5] Weekly event collection (Monday) --- >> "%LOGFILE%"
+    %CLAUDE_CMD% -p "/weekly-event-collector" >> "%LOGFILE%" 2>&1
+
+    echo. >> "%LOGFILE%"
     echo --- [5/5] Weekly article generation (Monday) --- >> "%LOGFILE%"
     %CLAUDE_CMD% -p "/weekly-article-generator" >> "%LOGFILE%" 2>&1
 ) else (
-    echo [INFO] Weekly article skipped (today: %DOW%). >> "%LOGFILE%"
+    echo [INFO] Weekly tasks skipped (today: %DOW%). >> "%LOGFILE%"
 )
 
 echo. >> "%LOGFILE%"

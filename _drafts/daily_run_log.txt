@@ -1,0 +1,31 @@
+======================================================= 
+Zoo Knowledge Vault - Daily automation 
+Start: 2026/04/20 19:38:32.44 
+======================================================= 
+[INFO] claude command: C:\Users\stagb\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.92\claude.exe 
+[INFO] working directory: C:\Users\stagb\OneDrive\デスクトップ\AIコード\動物 
+ 
+--- [1/5] Daily topic research --- 
+Unknown skill: daily-topic-researcher
+ 
+--- [2/5] Job listing collection --- 
+Unknown skill: job-listing-collector
+ 
+--- [3/5] Paper collection --- 
+Unknown skill: paper-collector
+ 
+--- [4/5] Event board auto-update --- 
+UPDATED: 17_求人情報\生き物イベント掲示板.md
+UPDATED: zoo-quartzg56\content\17_求人情報\生き物イベント掲示板.md
+EVENT_COUNT=0
+WARNINGS=9
+WARNING: collect_kmnh_museum: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_tobu_zoo: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_sendai_city: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_kyoto_aquarium: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_aquamarine: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_jrs_reptile: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_nacsj: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_jwcs: <urlopen error [Errno 11001] getaddrinfo failed>
+WARNING: collect_showa_park: <urlopen error [Errno 11001] getaddrinfo failed>
+ 
